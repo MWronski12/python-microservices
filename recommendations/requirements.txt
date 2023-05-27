@@ -1,0 +1,9 @@
+colorama==0.4.6
+grpc-interceptor==0.15.2
+grpcio==1.54.2
+grpcio-tools==1.54.2
+iniconfig==2.0.0
+packaging==23.1
+pluggy==1.0.0
+protobuf==4.23.1
+pytest==7.3.1

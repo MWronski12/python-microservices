@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: marketplace
+spec:
+  type: LoadBalancer
+  selector:
+    app: marketplace
+  ports:
+    - name: http
+      protocol: TCP
+      port: 5000
+      targetPort: 5000

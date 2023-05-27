@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: marketplace
+  labels:
+    app: marketplace
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: marketplace
+  template:
+    metadata:
+      labels:
+        app: marketplace
+    spec:
+      containers:
+        - name: marketplace
+          image: szekler/marketplace:1.0
+          env:
+            - name: RECOMMENDATIONS_HOST
+              value: recommendations
