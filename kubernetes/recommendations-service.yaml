@@ -9,5 +9,5 @@ spec:
   ports:
     - name: grpc
       protocol: TCP
-      port: 50051
-      targetPort: 50051
+      port: 443
+      targetPort: 443

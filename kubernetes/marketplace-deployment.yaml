@@ -6,7 +6,7 @@ metadata:
   labels:
     app: marketplace
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: marketplace
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: marketplace
-          image: szekler/marketplace:1.0
+          image: szekler/marketplace:latest
           env:
             - name: RECOMMENDATIONS_HOST
               value: recommendations

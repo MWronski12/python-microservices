@@ -6,7 +6,7 @@ metadata:
   labels:
     app: recommendations
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: recommendations
@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
         - name: recommendations
-          image: szekler/recommendations:1.0
+          image: szekler/recommendations:latest
